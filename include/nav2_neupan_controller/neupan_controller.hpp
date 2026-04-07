@@ -29,11 +29,6 @@
 #include "rclcpp/logger.hpp"
 #include "rclcpp_lifecycle/lifecycle_node.hpp"
 
-namespace tf2_ros
-{
-class Buffer;
-}
-
 namespace nav2_neupan_controller
 {
 
