@@ -18,7 +18,7 @@ jobs:
       - name: Install clang-format and clang-tidy
         uses: gerlero/apt-install@v1
         with:
-          packages: clang-format-21 clang-tidy-21
+          packages: clang-format-21 clang-tidy-21 ros-jazzy-tf2-ros
 
       - name: Build and run tests
         uses: ros-tooling/action-ros-ci@v0.4
