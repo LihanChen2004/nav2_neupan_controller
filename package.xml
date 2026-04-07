@@ -6,24 +6,21 @@
   <description>NeuPAN Neural Path Planning controller plugin for Navigation2</description>
   <maintainer email="lihanchen2004@163.com">Lihan Chen</maintainer>
   <license>Apache-2.0</license>
-  <author email="lihanchen2004@163.com">Lihan Chen</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>rclcpp</depend>
-  <depend>nav2_core</depend>
   <depend>nav2_common</depend>
+  <depend>nav2_core</depend>
   <depend>nav2_util</depend>
   <depend>nav2_costmap_2d</depend>
+  <depend>nav2_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
   <depend>pluginlib</depend>
   <depend>tf2</depend>
   <depend>tf2_ros</depend>
   <depend>tf2_geometry_msgs</depend>
-  <depend>geometry_msgs</depend>
-  <depend>nav_msgs</depend>
-  <depend>sensor_msgs</depend>
-  <depend>visualization_msgs</depend>
-  <depend>python3-dev</depend>
 
 	<test_depend>ament_lint_auto</test_depend>
 	<test_depend>ament_cmake_clang_format</test_depend>
