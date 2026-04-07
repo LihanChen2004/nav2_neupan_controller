@@ -1,11 +1,17 @@
 # Nav2 NeuPAN Controller Plugin
 
+[![Nav2 Controller](https://img.shields.io/badge/NAV2-Controller-blue?logo=ros)](https://opensource.org/licenses/Apache-2.0)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![GitHub Repo stars](https://img.shields.io/github/stars/LihanChen2004/nav2_neupan_controller?style=flat&logo=Github)](https://github.com/LihanChen2004/nav2_neupan_controller/stargazers)
 [![Build](https://github.com/LihanChen2004/nav2_neupan_controller/actions/workflows/build_and_test.yml/badge.svg)](https://github.com/LihanChen2004/nav2_neupan_controller/actions/workflows/build_and_test.yml)
 
 This package provides a Nav2 local controller plugin based on NeuPAN. It implements the `nav2_core::Controller` interface and can run inside `controller_server` as a local trajectory planner.
 
 The controller delegates trajectory generation to NeuPAN (Python side), converts planner outputs to ROS velocity commands, and publishes visualization topics for debugging and analysis.
+
+| Ackerman | Diff | Omni |
+|:-----------------:|:--------------:|:--------------:|
+|![rmuc_lidar_on_chassis_nav](https://cdn2.flowus.cn/oss/e6a6695a-6bfd-4bd6-89c1-d8849fe90bbe/20260407neupan_acker_gzsim.gif?filename=20260407neupan_acker_gzsim.gif&time=1775571300&token=01f80d3fe7568ff3584e4bb20a65c2303d436d18abd796a1777d3e94f0194066&role=free)|TBD|TBD|
 
 > [!NOTE]
 >
@@ -101,29 +107,8 @@ controller_server:
 | `nrmp_point_markers` | `visualization_msgs/msg/MarkerArray` | NRMP points visualization. |
 | `robot_marker` | `visualization_msgs/msg/Marker` | Robot body marker (rectangle model). |
 
-## Notes for Users
-
-- `neupan_config_path` must be set, otherwise initialization fails.
-- The plugin dynamically updates parameters at runtime for all listed parameters.
-- If no obstacle points are extracted from costmap, the controller still runs and tracks path.
-- For Ackermann mode, angular velocity is computed from steering angle and wheelbase:
-
-  \[
-  \omega = \frac{v}{L} \tan(\delta)
-  \]
-
-- Velocity outputs are always clamped by configured limits before publishing.
-
-## Build
-
-In your workspace root:
-
-```bash
-./build.sh
-```
-
 ## Copyright and Licensing
 
 nav2_neupan_controller is provided under Apache License 2.0.
 
-The upstream [NeuPAN](ttps://github.com/hanruihua/NeuPAN.git) vendor repository uses GPL-3.0. All rights and license terms of that upstream project are reserved and must be respected.
+The upstream [NeuPAN](https://github.com/hanruihua/NeuPAN.git) vendor repository uses GPL-3.0. All rights and license terms of that upstream project are reserved and must be respected.
