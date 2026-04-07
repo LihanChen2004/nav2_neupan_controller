@@ -19,11 +19,10 @@
 #include <memory>
 #include <mutex>
 #include <string>
-#include <tf2_ros/buffer.hpp>
 
 #include "nav2_neupan_controller/neupan_types.hpp"
 #include "nav_msgs/msg/path.hpp"
-#include "rclcpp/logger.hpp"
+#include "tf2_ros/buffer.hpp"
 
 namespace nav2_neupan_controller
 {

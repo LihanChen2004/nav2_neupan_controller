@@ -15,15 +15,10 @@
 #ifndef NAV2_NEUPAN_CONTROLLER__OBSTACLE_EXTRACTOR_HPP_
 #define NAV2_NEUPAN_CONTROLLER__OBSTACLE_EXTRACTOR_HPP_
 
-#include <array>
-#include <memory>
 #include <utility>
 #include <vector>
 
 #include "nav2_costmap_2d/costmap_2d_ros.hpp"
-#include "nav2_neupan_controller/parameter_handler.hpp"
-#include "rclcpp/logger.hpp"
-#include "tf2_ros/buffer.h"
 
 namespace nav2_neupan_controller
 {
