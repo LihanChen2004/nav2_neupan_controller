@@ -37,6 +37,7 @@ ament_auto_add_library(${PROJECT_NAME} SHARED
 target_include_directories(${PROJECT_NAME} PUBLIC
   ${Python3_INCLUDE_DIRS}
   ${NumPy_INCLUDE_DIR}
+  tf2_ros
 )
 target_link_libraries(${PROJECT_NAME} ${Python3_LIBRARIES})
 
