@@ -16,7 +16,6 @@
 
 #include "tf2/utils.hpp"
 #include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
-#include "tf2_ros/buffer.hpp"
 
 namespace nav2_neupan_controller
 {

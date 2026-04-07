@@ -6,8 +6,11 @@ jobs:
   build_and_test:
     runs-on: ubuntu-latest
     container:
-      image: rostooling/setup-ros-docker:ubuntu-noble-ros-jazzy-ros-base-latest
+      image: rostooling/setup-ros-docker:ubuntu-noble-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
       - name: Add LLVM APT repository
         uses: gerlero/add-apt-repository@v1
         with:
