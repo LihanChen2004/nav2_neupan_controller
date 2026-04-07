@@ -6,7 +6,7 @@ jobs:
   build_and_test:
     runs-on: ubuntu-latest
     container:
-      image: rostooling/setup-ros-docker:ubuntu-noble-ros-jazzy-desktop-latest
+      image: rostooling/setup-ros-docker:ubuntu-noble-ros-jazzy-ros-base-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -21,7 +21,7 @@ jobs:
       - name: Install clang-format and clang-tidy
         uses: gerlero/apt-install@v1
         with:
-          packages: clang-format-21 clang-tidy-21
+          packages: clang-format-21 clang-tidy-21 ros-jazzy-tf2-ros
 
       - name: Build and run tests
         uses: ros-tooling/action-ros-ci@v0.4
