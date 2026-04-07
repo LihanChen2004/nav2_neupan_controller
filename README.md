@@ -9,7 +9,7 @@ This package provides a Nav2 local controller plugin based on NeuPAN. It impleme
 
 The controller delegates trajectory generation to NeuPAN (Python side), converts planner outputs to ROS velocity commands, and publishes visualization topics for debugging and analysis.
 
-| Ackerman | Diff | Omni |
+| Ackermann | Diff | Omni |
 |:-----------------:|:--------------:|:--------------:|
 |![rmuc_lidar_on_chassis_nav](https://cdn2.flowus.cn/oss/e6a6695a-6bfd-4bd6-89c1-d8849fe90bbe/20260407neupan_acker_gzsim.gif?filename=20260407neupan_acker_gzsim.gif&time=1775571300&token=01f80d3fe7568ff3584e4bb20a65c2303d436d18abd796a1777d3e94f0194066&role=free)|TBD|TBD|
 
